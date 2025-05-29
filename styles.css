@@ -1,0 +1,147 @@
+/* === General Layout === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+/* === Task Indicator === */
+#current-task {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* === Conversation Area === */
+#conversation-display {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 12px;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+/* === Input Section === */
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section input[type="text"] {
+  width: 300px;
+  padding: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.input-section button {
+  padding: 8px 12px;
+  margin-right: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* === Voice Selection === */
+.voice-selection {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.voice-selection label {
+  margin-right: 6px;
+}
+
+.voice-selection select {
+  margin-right: 12px;
+}
+
+/* === Translator Section === */
+.translator-section {
+  margin-top: 12px;
+}
+
+#jp-text {
+  width: 300px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+#translation-result {
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* === Final Script === */
+.script-box {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 12px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 800px;
+}
+
+/* === Script Buttons === */
+.script-buttons {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.script-buttons button {
+  margin-right: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+/* === TTS Status === */
+#tts-status {
+  margin-bottom: 8px;
+  font-style: italic;
+  color: gray;
+}
+
+/* === Glossary Section === */
+.glossary-box {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  max-width: 800px;
+  min-height: 60px;
+  margin-top: 10px;
+}
+
+#summary-content {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* === Dictionary Popup === */
+#dictionary-popup {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #888;
+  padding: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: move;
+}
+
+#dictionary-popup p {
+  margin: 0 0 8px;
+}
+
+#dictionary-popup button {
+  margin-right: 5px;
+  margin-top: 8px;
+}

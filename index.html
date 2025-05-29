@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 Interview Script Maker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎬 Interview Script Maker</h1>
+
+  <div id="current-task" class="task-indicator">
+    Welcome! Let’s get to know you a bit. What’s your name?
+  </div>
+
+  <div id="conversation-display" class="conversation-box"></div>
+
+  <div class="input-section">
+    <input type="text" id="user-response" placeholder="Type your response...">
+    <button id="send-response">Send 💬</button>
+    <button id="dictionary-button">📖 What Does It Mean?</button>
+
+    <div class="translator-section">
+      <input type="text" id="jp-text" placeholder="日本語を入力してください...">
+      <button id="translate-button">Translate to English 🌍</button>
+      <p id="translation-result"></p>
+    </div>
+
+    <div class="voice-selection">
+      <label for="voice-gender">Choose Voice:</label>
+      <select id="voice-gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+
+  <h2>📖 Final Script</h2>
+  <div id="final-script-content" class="script-box"></div>
+
+  <div class="script-buttons">
+    <p id="tts-status" style="font-style: italic; color: gray;"></p>
+    <button id="generate-script">🎬 Generate Final Script</button>
+    <button id="play-script">▶️ Play Script</button>
+    <button id="pause-script">⏸️ Pause</button>
+    <button id="save-script">📀 Save Script (Text)</button>
+    <button id="download-mp3">🔊 Download MP3</button>
+  </div>
+
+  <h2>📚 Glossary</h2>
+  <div class="glossary-box">
+    <ul id="summary-content"></ul>
+  </div>
+
+  <!-- Dictionary Popup -->
+  <div id="dictionary-popup" style="display: none;">
+    <div class="popup-content">
+      <p id="popup-meaning"></p>
+      <button id="popup-play">▶️ Play it</button>
+      <button id="popup-add">➕ Add to Glossary</button>
+      <button id="popup-close">❌ Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
