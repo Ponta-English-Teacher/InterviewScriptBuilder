@@ -1,8 +1,8 @@
 {
   "name": "interview-script-builder",
   "version": "1.0.0",
-  "type": "module", // <-- ADD THIS LINE
-  "private": true, // Recommended for frontend/serverless projects not meant for npm publish
+  "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vercel dev",
     "start": "vercel start"
