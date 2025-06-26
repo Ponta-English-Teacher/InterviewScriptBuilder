@@ -1,4 +1,12 @@
 {
+  "name": "interview-script-builder",
+  "version": "1.0.0",
+  "type": "module", // <-- ADD THIS LINE
+  "private": true, // Recommended for frontend/serverless projects not meant for npm publish
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel start"
+  },
   "dependencies": {
     "node-fetch": "^3.3.2"
   }
